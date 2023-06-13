@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@font-face {
+    font-family: "Brittany";
+    src: url(../brittany_signature/BrittanySignature.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cinzel', serif;
+    scroll-behavior: smooth;
+}
+/*Barra navegacion*/
+.cabecera-principal{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #F5D7B5;
+}
+.cabecera-principal a{
+    align-self: center;
+    justify-content: flex-start;
+    margin-left: 1rem;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: black;
+}
+.cabecera-principal a img{
+    width: 3rem;
+    align-self: center;
+}
+.cabecera-principal .dropdown{
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+    margin-right: 1.5rem;
+    border-radius: none;
+}
+.cabecera-principal .dropdown .btn{
+    border: none;
+    box-shadow: none;
+}
+.cabecera-principal .dropdown .dropdown-menu{
+    background-color: white;
+    border: none;
+    line-height: 3rem;
+}
+.cabecera-principal .dropdown .dropdown-menu .dropdown-item{
+    color: #F5D7B5;
+}
+.cabecera-principal .dropdown .dropdown-menu .dropdown-item:hover{
+    color: black;
+}
+.cabecera-principal .dropdown .dropdown-menu .dropdown-item:hover{
+    background-color: white;
+}
+.cabecera-principal .dropdown #SobreNosotros{
+    display: none;
+    color: white;
+}
+.cabecera-principal .dropdown #Ordenar{
+    display: none;
+    color: white;
+}
+.cabecera-principal .dropdown .btn #Productos{
+    display: none;
+    color: white;
+}
+.cabecera-principal .dropdown .btn img{
+    display: block;
+}
+.Cabecera{
+    display: grid;
+    place-content: top;
+    background-color: black;
+}
+.Cabecera h1{
+    margin-top: 3rem;
+    text-align: center;
+    font-family: "Brittany", sans-serif;
+    color: #F5D7B5;
+    font-size: 5rem;
+}
+.formularios{
+    display: grid;
+    place-content: top;
+    background-color: black;
+    height: 50vh;
+    font-family: 'Montserrat', sans-serif;
+}
+.formularios .nombre{
+    width: 90vw;
+    place-self: center;
+    align-self: self-end;
+    padding-left: 1rem;
+    height: 3rem;
+}
+.formularios .correo{
+    width: 90vw;
+    place-self: center;
+    padding-left: 1rem;
+    height: 3rem;
+}
+.formularios .texto{
+    width: 90vw;
+    height: 6rem;
+    place-self: center;
+    align-self: self-start;
+    padding-left: 1rem;
+}
+.formularios button{
+    place-self: center;
+    width: 90vw;
+    background-color: #F5D7B5;
+    color: black;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    align-self: start;
+    height: 3rem;
+}
+.LogoAppetite{
+    background-color: black;
+    height: 50vh;
+    display: grid;
+    place-content: center;
+}
+.LogoAppetite a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #F5D7B5;
+    justify-self: center;
+}
+.LogoAppetite a img{
+    width: 5rem;
+}
+.LogoAppetite p {
+    text-align: center;
+    margin: 1rem;
+    color: #F5D7B5;
+    font-family: 'Montserrat', sans-serif;
+}
+footer{
+    height: 100vh;
+    background-color: black;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+footer .ola{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+footer .ola svg {
+    grid-column: 1/4;
+}
+footer .contacto li {
+    list-style-type: none;
+    margin-left: 1rem;
+    line-height: 50px;
+}
+footer .contacto li a{
+    text-decoration: none;
+    color: #F5D7B5;
+}
+footer .contacto .fb{
+    display: grid;
+    place-content: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: #F5D7B5;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+.fb img{
+    width: 2rem;
+}
+.fb:hover{
+    box-shadow: #F5D7B5 0px 5px 15px;
+}
+footer .contacto .Ig{
+    display: grid;
+    place-content: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: #F5D7B5;
+    border-radius: 50%;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.Ig img{
+    width: 2rem;
+}
+.Ig:hover{
+    box-shadow: #F5D7B5 0px 5px 15px;
+}
+footer .imagen{
+    display: grid;
+    place-content: center;
+}
+footer .imagen img{
+    width: 35rem;
+}
+@media(min-width:768px){
+    .cabecera-principal{
+        height: 5rem;
+    }
+    .cabecera-principal .dropdown #SobreNosotros{
+        display: block;
+        color: black;
+        text-decoration: none;
+    }
+    .cabecera-principal .dropdown #SobreNosotros:hover{
+        color: black;
+    }
+    .cabecera-principal .dropdown #Ordenar{
+        display: block;
+        color: black;
+        text-decoration: none;
+    }
+    .cabecera-principal .dropdown #Ordenar:hover{
+        color: black;
+    }
+    .cabecera-principal .dropdown .btn #Productos{
+        display: block;
+        color: black;
+        text-decoration: none;
+    }
+    .cabecera-principal .dropdown .btn #Productos:hover{
+        color: black;
+    }
+    .cabecera-principal .dropdown .btn img{
+        display: none;
+    }
+    .cabecera-principal .dropdown .dropdown-menu #sn{
+        display: none;
+    }
+    .cabecera-principal .dropdown .dropdown-menu #o{
+        display: none;
+    }
+    .cabecera-principal .dropdown .dropdown-menu #p{
+        display: none;
+    }
+
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        background-color: black;
+    }
+    .contenido-principal .formularios .nombre{
+        width: 45vw;
+    }
+    .contenido-principal .formularios .correo{
+        width: 45vw;
+    }
+    .contenido-principal .formularios .texto{
+        width: 45vw;
+    }
+    .contenido-principal .formularios button{
+        width: 45vw;
+    }
+    .contenido-principal .LogoAppetite{
+        grid-row: 1;
+    }
+    footer {
+        padding-top: 5rem;
+    }
+    footer .contacto{
+        display: flex;
+        justify-content: space-around;
+    }
+    footer .contacto .fb{
+        margin: 0;
+    }
+    footer .contacto .Ig{
+        margin: 0;
+    }
+    footer .imagen img{
+        width: 55rem;
+    }
+}
+@media(min-width:1024px){
+    .cabecera-principal #Appetite {
+        font-size: 1.5rem;
+    }
+    .cabecera-principal a {
+        font-size: 1rem;
+    }
+}
+@media(min-width:1440px){
+    .contenido-principal .formularios .texto {
+        height: 9rem;
+    }
+    footer .imagen img {
+        margin-top: 8rem;
+        width: 55rem;
+    }
+}
