@@ -439,6 +439,7 @@ color: #c9b12da7;
     height: 800px;
     place-content: center;
     background-color: white;
+    margin-top: -2px;
 }
 .seccion-carrusel h1{
     margin: 10%;
