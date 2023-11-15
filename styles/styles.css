@@ -151,6 +151,28 @@ color: #c9b12da7;
         transform: translateY(0px);
     }
 }
+.slider {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+.slider .slider-track{
+    display: flex;
+    animation: scroll 1000s linear infinite;
+    -webkit-animation: scroll 1000s linear infinite;
+    width: calc(2916px * 6);
+}
+@keyframes scroll{
+    0%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100%{
+        -webkit-transform: translateX(calc(2916px * 3));
+        transform: translateX(calc(-2916px * 3));
+    }
+}
 /*Frase pequeña*/
 #encabezado-intermedio{
     background-color: black;
